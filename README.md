@@ -12,18 +12,14 @@ It is implemented as a simple string extension method that makes it easy to send
 ## Usage
 
 ```csharp
-using System;
-using ChatGptApi;
+using ChatGPNet.Extension;
 
-class Program
-{
-    static async Task Main()
-    {
-        string message = "Tell me a joke.";
-        string response = await message.ChatGpt();
-        Console.WriteLine(response);
-    }
-}
+string message = "Tell me a joke.";
+string response = await message.ChatGpt();
+Console.WriteLine(response);
+
+int memoryMessageLimit = 3;
+Console.WriteLine(await "What is the capital of ？".ChatGpt(memoryMessageLimit));
 ```
 
 # ChatGPT在C＃中的示例項目
@@ -39,16 +35,13 @@ class Program
 ## 使用
 
 ```csharp
-using System;
-using ChatGptApi;
+using ChatGPNet.Extension;
 
-class Program
-{
-    static async Task Main()
-    {
-        string message = "告訴我一個笑話。";
-        string response = await message.ChatGpt();
-        Console.WriteLine(response);
-    }
-}
+string message = "告訴我一個笑話。";
+string response = await message.ChatGpt();
+Console.WriteLine(response);
+
+int memoryMessageLimit = 3;
+Console.WriteLine(await "台灣的首都是哪裡？".ChatGpt(memoryMessageLimit));
+
 ```
