@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatGPNeT", "ChatGPNeT\ChatGPNeT.csproj", "{D71D726B-A877-486B-BACB-4078EAD912A4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeleGPTram", "TeleGPTram\TeleGPTram.csproj", "{BF827EEB-3874-48D7-AB31-852C9C70C8BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisChatGPT", "DisChatGPT\DisChatGPT.csproj", "{F4EF9641-D81F-4699-8111-6DCBC9CE8A1C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,13 @@ Global
 		{D71D726B-A877-486B-BACB-4078EAD912A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D71D726B-A877-486B-BACB-4078EAD912A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D71D726B-A877-486B-BACB-4078EAD912A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF827EEB-3874-48D7-AB31-852C9C70C8BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF827EEB-3874-48D7-AB31-852C9C70C8BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF827EEB-3874-48D7-AB31-852C9C70C8BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF827EEB-3874-48D7-AB31-852C9C70C8BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4EF9641-D81F-4699-8111-6DCBC9CE8A1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4EF9641-D81F-4699-8111-6DCBC9CE8A1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4EF9641-D81F-4699-8111-6DCBC9CE8A1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4EF9641-D81F-4699-8111-6DCBC9CE8A1C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
