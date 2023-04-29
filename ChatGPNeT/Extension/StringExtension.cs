@@ -18,15 +18,18 @@ public static class StringExtension
         { messages = new List<Message>(), model = Model.Gpt4_0314.GetTag(), temperature = .7f };
 
 
-    public static async Task<string> ChatGpt(this String str, int limit)
+    public static async Task<string> ChatGpt(this String str, int memMsgLimit)
     {
-        Request.messages ??= new() { };
-        while (Request.messages.Count > Math.Max(limit, 0))
-            Request.messages.RemoveAt(0);
+        (Request.messages ??= new() { })
+            .RemoveRange(0, Math.Max(Request.messages.Count - memMsgLimit, 0));
+        
         Request.messages.Add(new() { role = "user", content = str });
-        return string.Join("\n",
-            ((await Request.Send(Environment.GetEnvironmentVariable("OPEN_AI_TOKEN")))!).choices.Select(choice =>
+        var response = await Request.Send(Environment.GetEnvironmentVariable("OPEN_AI_TOKEN"));
+        Request.messages.AddRange(response.choices.Select(choice => choice.message));
+        var result = string.Join("\n",
+            response.choices.Select(choice =>
                 choice.message.content));
+        return result;
     }
 
     public static async Task<string> ChatGpt(this String str)
