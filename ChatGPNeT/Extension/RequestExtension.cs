@@ -41,7 +41,6 @@ public static class RequestExtension
                 Console.WriteLine("!chatGpt response deserialize fail.");
                 continue;
             }
-
             return response;
         }
     }
