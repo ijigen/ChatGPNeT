@@ -6,7 +6,7 @@ It is implemented as a simple string extension method that makes it easy to send
 ## Installation
 
 1. Download or clone this repository.
-2. Open the project in your favorite C# IDE or text editor.
+2. Open the project in your favorite C# IDE.
 3. Add your OpenAI API key as an environment variable named `OPEN_AI_TOKEN`.
 
 ## Usage
@@ -29,7 +29,7 @@ Console.WriteLine(await "What is the capital of ？".ChatGpt(memoryMessageLimit)
 ## 安裝
 
 1. 下載或克隆此存儲庫。
-2. 使用您喜愛的C＃IDE或文本編輯器打開項目。
+2. 使用您喜愛的C＃IDE編輯器打開項目。
 3. 將您的OpenAI API密鑰添加為名為`OPEN_AI_TOKEN`的環境變量。
 
 ## 使用
