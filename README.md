@@ -19,7 +19,7 @@ string response = await message.ChatGpt();
 Console.WriteLine(response);
 
 int memoryMessageLimit = 3;
-Console.WriteLine(await "What is the capital of ？".ChatGpt(memoryMessageLimit));
+Console.WriteLine(await "What is the capital of Taiwan？".ChatGpt(memoryMessageLimit));
 ```
 
 # ChatGPT在C＃中的示例項目
